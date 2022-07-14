@@ -144,6 +144,7 @@ const IndexPage = () => {
       <title>Piano Baby</title>
 
       <div>
+        <></>
         <button>Dó</button>
         <button>Rè</button>
         <button>Mi</button>
@@ -153,7 +154,7 @@ const IndexPage = () => {
         <button>Si</button>
         <button>Dó</button>
       </div>
-      
+
     </main>
   )
 }
