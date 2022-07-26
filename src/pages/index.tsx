@@ -36,31 +36,31 @@ const IndexPage = () => {
 
       <Piano>
         <div>
-          <img src={imageHeadPiano} className="imageHeadPiano"/>
+          <img src={imageHeadPiano} className="imageHeadPiano" alt="Header Piano"/>
         </div>
         <div className="note-buttons">
-          <button onMouseDown={() => handleNote("note_a")} className="note_a">
+          <button type="button" onMouseDown={() => handleNote("note_a")} className="note_a">
             <p className="keyButton">A</p> <p className="note">Dó</p>
           </button>
-          <button onMouseDown={() => handleNote("note_b")} className="note_b">
+          <button type="button" onMouseDown={() => handleNote("note_b")} className="note_b">
             <p className="keyButton">S</p> <p className="note">Rè</p>
           </button>
-          <button onMouseDown={() => handleNote("note_c")} className="note_c">
+          <button type="button" onMouseDown={() => handleNote("note_c")} className="note_c">
             <p className="keyButton">D</p> <p className="note">Mi</p>
           </button>
-          <button onMouseDown={() => handleNote("note_d")} className="note_d">
+          <button type="button" onMouseDown={() => handleNote("note_d")} className="note_d">
             <p className="keyButton">F</p> <p className="note">Fa</p>
           </button>
-          <button onMouseDown={() => handleNote("note_e")} className="note_e">
+          <button type="button" onMouseDown={() => handleNote("note_e")} className="note_e">
             <p className="keyButton">G</p> <p className="note">Sol</p>
           </button>
-          <button onMouseDown={() => handleNote("note_f")} className="note_f">
+          <button type="button" onMouseDown={() => handleNote("note_f")} className="note_f">
             <p className="keyButton">H</p> <p className="note">La</p>
           </button>
-          <button onMouseDown={() => handleNote("note_g")} className="note_g">
+          <button type="button" onMouseDown={() => handleNote("note_g")} className="note_g">
             <p className="keyButton">J</p> <p className="note">Si</p>
           </button>
-          <button onMouseDown={() => handleNote("note_h")} className="note_h">
+          <button type="button" onMouseDown={() => handleNote("note_h")} className="note_h">
             <p className="keyButton">K</p> <p className="note">Dó</p>
           </button>
         </div>

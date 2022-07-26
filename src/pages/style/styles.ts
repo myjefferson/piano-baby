@@ -1,8 +1,8 @@
+import React from 'react'
 import styled from 'styled-components'
-import background from '../../images/background.png'
+import background from '../../images/background.png';
 
-
-export const Main = styled.main`
+const Main = styled.main`
     background: url(${background}) no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -18,7 +18,7 @@ export const Main = styled.main`
     align-items: center;
 `;
 
-export const Piano = styled.div`
+const Piano = styled.div`
     width: 480px;
 
     .note-buttons{
@@ -111,3 +111,5 @@ export const Piano = styled.div`
         filter: drop-shadow(0 9px 5px rgba(0,0,0,0.6));
     }
 `;
+
+export { Main, Piano }
