@@ -1,35 +1,35 @@
 const keys = [
     {
         code: "a",
-        src: "../../sounds/note-c.ogg"
+        src: "note_a"
     },
     {
         code: "s",
-        src: "../../sounds/note-c.ogg"
+        src: "note_b"
     },
     {
         code: "d",
-        src: "../../sounds/note-c.ogg"
+        src: "note_c"
     },
     {
         code: "f",
-        src: "../../sounds/note-c.ogg"
+        src: "note_d"
     },
     {
         code: "g",
-        src: "../../sounds/note-c.ogg"
+        src: "note_e"
     },
     {
         code: "h",
-        src: "../../sounds/note-c.ogg"
+        src: "note_f"
     },
     {
         code: "j",
-        src: "../../sounds/note-c.ogg"
+        src: "note_g"
     },
     {
         code: "k",
-        src: "../../sounds/note-c.ogg"
+        src: "note_h"
     },
 ]
 
