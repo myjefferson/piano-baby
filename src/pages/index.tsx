@@ -1,12 +1,26 @@
-import { stringify } from "querystring";
 import * as React from "react";
 import keysAction from "../keysAction";
-import { Main, Piano } from "./style/styles";
+import Main from "./style/Main";
+import Piano from "./style/Piano"
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'person-info': PersonInfoProps
+    }
+  }
+}
+
+interface PersonInfoProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> {
+  heading: string,
+  subHeading: string,
+  size?: string
+}
 
 //Images
 import imageHeadPiano from '../images/head-piano.png';
 
-const handleNote = (note: string) => {
+const handleNote = (note: string | any) => {
   let song = new Audio(`../../sounds/${note}.ogg`);
   song.volume = 0.3;
   song.play();
@@ -20,7 +34,8 @@ document.addEventListener("keydown", (event) => {
   repeatKeysPressed[code] = false;
 
   if (keysAction.find((key) => key.code === code)) {
-    handleNote(keysAction.find((key) => key.code === code).src);
+    const keySrc = keysAction.find(key => key.code === code)
+    handleNote(keySrc?.src);
   }
 });
 
