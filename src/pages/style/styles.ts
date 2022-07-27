@@ -1,5 +1,6 @@
+import React from 'react'
 import styled from 'styled-components'
-import background from '../../images/background.png'
+import background from '../../images/background.png';
 
 
 export const Main = styled.main`
