@@ -3,6 +3,9 @@ import keysAction from "../keysAction";
 import Main from "./style/Main";
 import Piano from "./style/Piano"
 
+//Images
+import imageHeadPiano from '../images/head-piano.png';
+
 declare global {
   namespace JSX {
     interface IntrinsicElements {
@@ -17,34 +20,33 @@ interface PersonInfoProps extends React.DetailedHTMLProps<React.HTMLAttributes<H
   size?: string
 }
 
-//Images
-import imageHeadPiano from '../images/head-piano.png';
-
-const handleNote = (note: string | any) => {
-  let song = new Audio(`../../sounds/${note}.ogg`);
-  song.volume = 0.3;
-  song.play();
-};
-
-const repeatKeysPressed: any = {};
-document.addEventListener("keydown", (event) => {
-  const code = event.key.toLocaleLowerCase();
-  //Press Once
-  if (repeatKeysPressed[code] === false) return;
-  repeatKeysPressed[code] = false;
-
-  if (keysAction.find((key) => key.code === code)) {
-    const keySrc = keysAction.find(key => key.code === code)
-    handleNote(keySrc?.src);
-  }
-});
-
-document.addEventListener("keyup", (event) => {
-  repeatKeysPressed[event.key] = true;
-});
-
 // markup
 const IndexPage = () => {
+  const handleNote = (note: string | any) => {
+    let song = new Audio(`../../sounds/${note}.ogg`);
+    song.volume = 0.6;
+    song.play();
+  };
+
+  const repeatKeysPressed: any = {};
+  React.useEffect(() => {
+      document.addEventListener("keydown", (event) => {
+        const code = event.key.toLocaleLowerCase();
+        //Press Once
+        if (repeatKeysPressed[code] === false) return;
+        repeatKeysPressed[code] = false;
+      
+        if (keysAction.find((key) => key.code === code)) {
+          const keySrc = keysAction.find(key => key.code.toLocaleLowerCase() === code)
+          handleNote(keySrc?.src);
+        }
+      });
+      
+      document.addEventListener("keyup", (event) => {
+        repeatKeysPressed[event.key] = true;
+      });
+  }, [])
+
   return (
     <Main>
       <title>Piano Baby</title>
