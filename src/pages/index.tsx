@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, {useEffect} from "react";
 import keysAction from "../keysAction";
 import Main from "./style/Main";
 import Piano from "./style/Piano"
@@ -22,6 +22,11 @@ interface PersonInfoProps extends React.DetailedHTMLProps<React.HTMLAttributes<H
 
 // markup
 const IndexPage = () => {
+  useEffect(() => {
+    //Preload notes
+    keysAction.map(note => new Audio(`../../sounds/${note.src}.ogg`))
+  },[])
+  
   const handleNote = (note: string | any) => {
     let song = new Audio(`../../sounds/${note}.ogg`);
     song.volume = 0.6;
