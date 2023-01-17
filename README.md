@@ -1,54 +1,31 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby minimal TypeScript starter
+  Piano Baby
 </h1>
+<p align="center">Desenvolvido com Gatsby</p>
+<p align="center"><img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="40" /></p>
 
-## 🚀 Quick start
+## 🚀 Vamos começar!
 
-1.  **Create a Gatsby site.**
+🔨 1.  **Instalando o projeto.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+<li>Digite os seguintes comandos no seu terminal, para clonar o projeto.</li></br>
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
-    ```
+    git clone https://github.com/myjefferson/piano-baby.git
 
-2.  **Start developing.**
+<li>Após clonado, instale as dependências usando o npm ou yarn. No meu caso, vou usar o npm</li></br>
 
-    Navigate into your new site’s directory and start it up.
+    npm install
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+<li>Agora vamos rodar o projeto, digite o comando</li></br>
+ 
+    npm run start
 
-3.  **Open the code and start customizing!**
+⚙️ 2.  **Pronto! Agora é só abrir o navegador**
 
-    Your site is now running at http://localhost:8000!
+    Seu site agora está funcionando no endereço http://localhost:8000!
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+</hr>
 
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+<h5 align="center">
+  Desenvolvido com 💚 por Jefferson Carvalho. (Dedicado para o 1 aninho de idade de Joe Yohan Carvalho - Meu irmãozinho)
+</h5>
