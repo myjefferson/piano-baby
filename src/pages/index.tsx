@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import keysAction from "../keysAction";
 import Main from "./style/Main";
 import Piano from "./style/Piano"
+import Footer from './Footer'
 
 //Images
 import imageHeadPiano from '../images/head-piano.png';
@@ -26,7 +27,7 @@ const IndexPage = () => {
     //Preload notes
     keysAction.map(note => new Audio(`../../sounds/${note.src}.ogg`))
   },[])
-  
+
   const handleNote = (note: string | any) => {
     let song = new Audio(`../../sounds/${note}.ogg`);
     song.volume = 0.6;
@@ -86,6 +87,8 @@ const IndexPage = () => {
             <p className="keyButton">K</p> <p className="note">Dó</p>
           </button>
         </div>
+
+        <Footer/>
       </Piano>
     </Main>
   );
