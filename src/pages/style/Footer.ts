@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const FooterStyle = styled.div`
+const FooterStyle = styled.div`
     width: 100%;
     padding: 3px;
     position: fixed;
@@ -19,3 +19,5 @@ export const FooterStyle = styled.div`
         font-stlyle: none;
     }
 `;
+
+export default FooterStyle;
