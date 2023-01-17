@@ -87,9 +87,9 @@ const IndexPage = () => {
             <p className="keyButton">K</p> <p className="note">Dó</p>
           </button>
         </div>
-
-        <Footer/>
       </Piano>
+      
+      <Footer/>
     </Main>
   );
 };
