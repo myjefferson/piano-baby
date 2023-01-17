@@ -1,3 +1,4 @@
+<p align="center"><img alt="Gatsby" src="https://github.com/myjefferson/piano-baby/blob/master/src/images/piano-complete.png" width="300" /></p>
 <h1 align="center">
   Piano Baby
 </h1>
