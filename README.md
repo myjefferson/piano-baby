@@ -28,5 +28,5 @@
 </hr>
 
 <h5 align="center">
-  Desenvolvido com 💚 por Jefferson Carvalho. (Dedicado para o 1 aninho de idade de Joe Yohan Carvalho - Meu irmãozinho)
+  Desenvolvido com 💛 por Jefferson Carvalho. (Dedicado para o 1 aninho de idade de Joe Yohan Carvalho - Meu irmãozinho)
 </h5>
