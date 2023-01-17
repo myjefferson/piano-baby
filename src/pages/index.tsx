@@ -86,6 +86,9 @@ const IndexPage = () => {
           </button>
         </div>
       </Piano>
+      
+      <Footer/>
+    
     </Main>
   );
 };
