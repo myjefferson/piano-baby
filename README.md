@@ -23,7 +23,7 @@
 
 ⚙️ 2.  **Pronto! Agora é só abrir o navegador**
 
-    Seu site agora está funcionando no endereço http://localhost:8000!
+    Seu site agora está funcionando no endereço http://localhost:8000
 
 </hr>
 
